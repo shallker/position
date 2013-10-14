@@ -2,7 +2,7 @@
   "name": "position",
   "repo": "shallker/position",
   "description": "Poistion an element in DOM",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "keywords": [],
   "dependencies": {
     "component/jquery": "*"  
