@@ -1,0 +1,44 @@
+doctype 5
+html
+  head
+    title Test
+    :stylus
+      .test
+        width 50px
+        height 50px
+        background #DDD
+        position fixed
+        text-align center
+        line-height 50px
+
+      #target
+        width 200px
+        height 200px
+        background #AAA
+        position absolute
+        top 200px
+        left 400px
+        line-height 200px
+        text-align center
+
+  body
+    #target target
+    #top.test top
+    #left.test left
+    #bottom.test bottom
+    #right.test right
+
+    script(src="../build/build.js")
+    script
+      var position = require('position');
+
+      var testTop = document.getElementById('top');
+      var testLeft = document.getElementById('left');
+      var testBottom = document.getElementById('bottom');
+      var testRight = document.getElementById('right');
+      var target = document.getElementById('target');
+
+      position(testTop).to(target).right((target.offsetWidth - testTop.offsetWidth) / 2).top(10);
+      position(testBottom).to(target).right((target.offsetWidth - testBottom.offsetWidth) / 2).bottom(target.offsetHeight + 10);
+      position(testLeft).to(target).bottom((target.offsetHeight - testLeft.offsetHeight) / 2).left(10);
+      position(testRight).to(target).bottom((target.offsetHeight - testRight.offsetHeight) / 2).right(target.offsetWidth +  10);

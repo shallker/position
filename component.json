@@ -1,0 +1,17 @@
+{
+  "name": "position",
+  "repo": "shallker/position",
+  "description": "Poistion an element in DOM",
+  "version": "0.0.1",
+  "keywords": [],
+  "dependencies": {
+    "component/jquery": "*"  
+  },
+  "development": {},
+  "license": "MIT",
+  "main": "index.js",
+  "scripts": [
+    "index.js",
+    "lib/position.js"
+  ]
+}

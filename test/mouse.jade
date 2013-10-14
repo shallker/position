@@ -1,0 +1,24 @@
+doctype 5
+html
+  head
+    title Test
+    :stylus
+      #test
+        width 50px
+        height 50px
+        background #DDD
+        position fixed
+
+  body
+    #test
+
+    script(src="../build/build.js")
+    script
+      var position = require('position');
+      var el = document.getElementById('test');
+
+      document.addEventListener('mousemove', onMousemove);
+
+      function onMousemove(mousemove) {
+        position(el).at(mousemove.pageX, mousemove.pageY).top(-el.offsetHeight / 2).center();
+      }
