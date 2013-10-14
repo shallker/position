@@ -16,11 +16,9 @@
       var position = require('position');
       var el = document.getElementById('test');
       
-      document.addEventListener('mousemove', onMousemove);
-      
-      function onMousemove(mousemove) {
+      document.addEventListener('mousemove', function (mousemove) {
         position(el).at(mousemove.pageX, mousemove.pageY).top(-el.offsetHeight / 2).center();
-      }
+      });
     </script>
   </body>
 </html>
