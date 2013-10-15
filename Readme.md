@@ -30,12 +30,12 @@ awesomeProject.position = function (pageX, pageY) {
 ## API
 
 ## position(element)
-### .to(pageX, pageY, width, height)
+### .to(element)
 ### .at(pageX, pageY)
-#### .top(Number offset)
-#### .left(Number offset)
-#### .right(Number offset)
-#### .bottom(Number offset)
+#### .top([Number offset])
+#### .left([Number offset])
+#### .right([Number offset])
+#### .bottom([Number offset])
 #### .center()
 
 
