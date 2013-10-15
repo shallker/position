@@ -29,9 +29,9 @@ awesomeProject.position = function (pageX, pageY) {
 
 ## API
 
-## position(element)
-### .to(element)
-### .at(pageX, pageY)
+## position(Node element)
+### .to(Node element)
+### .at(Number pageX, Number pageY)
 #### .top([Number offset])
 #### .left([Number offset])
 #### .right([Number offset])
