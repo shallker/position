@@ -43,6 +43,9 @@ awesomeProject.position = function (pageX, pageY) {
 http://shallker.github.io/position/test/mouse.html   
 http://shallker.github.io/position/test/element.html   
 
+## Todo
+- add `position: absolute` to element
+
 ## License
 
   MIT
