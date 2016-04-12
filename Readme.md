@@ -1,7 +1,7 @@
 
 # position
 
-  Poistion an element in DOM
+  Position an element in DOM
 
 ## Installation
 
